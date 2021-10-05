@@ -1054,6 +1054,17 @@ h6 {
     padding-right: 0;
 }
 
+@media only screen and (max-width: 600px) {
+    .site-foot-nav-right {
+        display: none;
+    }
+
+    .site-foot-nav-left{
+        width: 100%;
+        text-align: center; 
+    }
+  }
+
 
 /* Koenig Styles
 /* ---------------------------------------------------------- */
