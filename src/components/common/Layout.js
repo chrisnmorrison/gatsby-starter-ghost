@@ -52,17 +52,15 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
-                                     <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>
-                                    <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>
-                                    <a href={ instagramUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/instagram.png" alt="Instagram" /></a>
-                                    <a href={ youtubeUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/youtube.png" alt="Instagram" /></a>
-                                    <a href={ dribbbleUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/dribbble.png" alt="Instagram" /></a>
+                                    <a href={facebookUrl} className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.png" alt="Facebook" /></a>
+                                    <a href={instagramUrl} className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/instagram.png" alt="Instagram" /></a>
+                                    <a href={youtubeUrl} className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/youtube.png" alt="Instagram" /></a>
+                                    <a href={dribbbleUrl} className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/dribbble.png" alt="Instagram" /></a>
 
 
-                                    <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
                                 </div>
                             </div>
-                            { isHome ?
+                            {isHome ?
                                 <div className="site-banner">
                                     <h1 className="site-banner-title">{site.title}</h1>
                                     <p className="site-banner-desc">{site.description}</p>
@@ -72,9 +70,12 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <div className="site-nav-left">
                                     {/* The navigation items as setup in Ghost */}
                                     <Navigation data={site.navigation} navClass="site-nav-item" />
+
                                 </div>
                                 <div className="site-nav-right">
                                     <Link className="site-nav-button" to="https://mesmerdesign.ca">mesmerdesign.ca</Link>
+                                    <a className="site-nav-item" href={`https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/`} target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
+
                                 </div>
                             </nav>
                         </div>

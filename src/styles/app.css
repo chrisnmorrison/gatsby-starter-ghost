@@ -688,8 +688,14 @@ h6 {
 }
 
 .site-logo {
-    height: 25px;
+    height: 38px;
 }
+
+@media only screen and (max-width: 485px) {
+    .site-logo {
+      height: 25px;
+    }
+  }
 
 .site-mast {
     display: flex;
