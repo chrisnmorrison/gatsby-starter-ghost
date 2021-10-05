@@ -1010,6 +1010,11 @@ h6 {
 /* Footer
 /* ---------------------------------------------------------- */
 
+.flaticon-attribute {
+    text-align: center;
+    margin: 0 auto;
+}
+
 .site-foot {
     padding: 20px 0 40px 0;
     color: rgba(255,255,255,0.7);

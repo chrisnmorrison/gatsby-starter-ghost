@@ -99,6 +99,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <Navigation data={site.navigation} navClass="site-foot-nav-item" />
                             </div>
                         </div>
+                        <div className="flaticon-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                     </footer>
 
                 </div>
