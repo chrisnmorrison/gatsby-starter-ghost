@@ -683,9 +683,28 @@ h6 {
 }
 
 .site-nav-icon {
-    height: 15px;
+    height: 26px;
     margin: -5px 0 0;
 }
+
+@media only screen and (max-width: 400px) {
+
+    .site-mast{
+        flex-direction: column;
+    }
+
+    .rss-icon {
+        height: 20px;
+    }
+
+    .site-mast-right {
+        flex-direction: row;
+    }
+
+    .site-logo {
+        margin-bottom: 1.5rem;
+    }
+  }
 
 .site-logo {
     height: 38px;
@@ -748,13 +767,14 @@ h6 {
 
 .site-nav-button {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 5px 9px 6px 9px;
     border: #fff 1px solid;
     color: #fff;
     font-size: 1.3rem;
     line-height: 1em;
     border-radius: var(--radius);
-    opacity: 0.7;
+    opacity: 0.8;
+    margin-right: 1rem;
 }
 
 .site-nav-button:hover {
@@ -802,6 +822,7 @@ h6 {
     margin: 0 0 5px 0;
     font-size: 1.4rem;
     line-height: 1.15em;
+    opacity: 0.75;
     color: var(--color-secondary);
 }
 
