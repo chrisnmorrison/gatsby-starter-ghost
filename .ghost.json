@@ -1,10 +1,10 @@
 {
   "development": {
     "apiUrl": "https://mesmer-blog.herokuapp.com",
-    "contentApiKey": "a140ae257f324be8698fbfd23b"
+    "contentApiKey": "ad89c5a1a46805216e6f1a56fe"
   },
   "production": {
     "apiUrl": "https://mesmer-blog.herokuapp.com",
-    "contentApiKey": "a140ae257f324be8698fbfd23b"
+    "contentApiKey": "ad89c5a1a46805216e6f1a56fe"
   }
 }
