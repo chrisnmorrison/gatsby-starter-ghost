@@ -687,6 +687,14 @@ h6 {
     margin: -5px 0 0;
 }
 
+@media only screen and (max-width: 600px) {
+
+
+    .rss-icon {
+        display: none;
+    }
+  }
+
 @media only screen and (max-width: 400px) {
 
     .site-mast{
@@ -785,7 +793,7 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-main {
-    padding: 4vw 0;
+    padding: 4vw 2vw;
 }
 
 /* Index
