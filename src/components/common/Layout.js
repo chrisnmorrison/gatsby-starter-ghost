@@ -84,6 +84,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                     <main className="site-main">
                         <Categories />
+                        <h2 className="recent-posts-title">Recent Posts</h2>
                         {/* All the main content gets inserted here, index.js, post.js */}
                         {children}
                     </main>
