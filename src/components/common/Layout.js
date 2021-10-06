@@ -24,8 +24,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = "https://www.facebook.com/msmrdesign";
     const instagramUrl = "https://www.instagram.com/mesmerdesign/";
-    const youtubeUrl = "https://www.instagram.com/mesmerdesign/";
-    const dribbbleUrl = "https://www.instagram.com/mesmerdesign/";
+    const youtubeUrl = "https://www.youtube.com/channel/UCQvO0qbIa11xqwgjWJBlWlQ";
+    const dribbbleUrl = "https://dribbble.com/mesmerdesign";
 
 
 
