@@ -1,10 +1,9 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+// import { useLocation } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import Categories from "./Categories"
 
 import { Navigation } from '.'
 import config from '../../utils/siteConfig'
@@ -28,15 +27,15 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const youtubeUrl = "https://www.youtube.com/channel/UCQvO0qbIa11xqwgjWJBlWlQ";
     const dribbbleUrl = "https://dribbble.com/mesmerdesign";
 
-const CategoryList = () => {
-    const location = useLocation();
-    if (location == "https://blog.mesmerdesign.ca/" || location == "https://blog.mesmerdesign.ca" ||
-    location == "blog.mesmerdesign.ca/" || location == "blog.mesmerdesign.ca"){
-        return <Categories />
-    } else {
-        return null;
-    }
-}
+// const CategoryList = () => {
+//     const location = useLocation();
+//     if (location == "https://blog.mesmerdesign.ca/" || location == "https://blog.mesmerdesign.ca" ||
+//     location == "blog.mesmerdesign.ca/" || location == "blog.mesmerdesign.ca"){
+//         return <Categories />
+//     } else {
+//         return null;
+//     }
+// }
 
     return (
         <>
@@ -92,8 +91,7 @@ const CategoryList = () => {
                     </header>
 
                     <main className="site-main">
-                    <CategoryList/>
-                        <h2 className="recent-posts-title">Recent Posts</h2>
+                    {/* <CategoryList/> */}
                         {/* All the main content gets inserted here, index.js, post.js */}
                         {children}
                     </main>

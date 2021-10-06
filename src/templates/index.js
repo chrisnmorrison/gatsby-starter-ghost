@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Categories from "./Categories"
 
 import { Layout, PostCard, Pagination } from '../components/common'
 import { MetaData } from '../components/common/meta'
@@ -20,6 +21,8 @@ const Index = ({ data, location, pageContext }) => {
         <>
             <MetaData location={location} />
             <Layout isHome={true}>
+                <Categories/>
+            <h2 className="recent-posts-title">Recent Posts</h2>
                 <div className="container">
                     <section className="post-feed">
                         {posts.map(({ node }) => (
