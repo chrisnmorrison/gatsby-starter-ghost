@@ -105,9 +105,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             <div className="site-foot-nav-left">
                                 <Link to="/">{site.title}</Link> © 2021 &mdash; Published with <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
                             </div>
-                            <div className="site-foot-nav-right">
+                            {/* <div className="site-foot-nav-right">
                                 <Navigation data={site.navigation} navClass="site-foot-nav-item" />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="flaticon-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> and <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                     </footer>
