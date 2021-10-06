@@ -13,7 +13,7 @@ import '../../styles/app.css'
 const Categories = () => {
 
   return (
-    <div className="categories-list">
+    <div className="container categories-list">
       <div className="category-1-3">
         <div className="list_item">
           <a href="https://blog.mesmerdesign.ca/tag/advice/" className="categories_list_link">
