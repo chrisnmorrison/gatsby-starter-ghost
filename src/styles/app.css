@@ -1362,6 +1362,10 @@ h6 {
     margin-bottom: 1.1rem;
     margin-right: 0;
     background: none;
+    height: 3rem;
+    text-align: center;
+    margin: 0 auto 1rem auto;
+    background-color: none;
   }
 
   .cat1 {
@@ -1388,13 +1392,6 @@ h6 {
       background-color: #aee77a !important;
   }
 
-  .category-icon {
-    width: 3rem;
-    text-align: center;
-    margin: 0 auto 1rem auto;
-    /* filter: invert(0%) sepia(5%) saturate(2254%) hue-rotate(345deg) brightness(100%) contrast(77%); */
-    background-color: none;
-  }
 
   @media only screen and (max-width: 870px) {
     .category-1-3 {
