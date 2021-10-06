@@ -27,7 +27,14 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const youtubeUrl = "https://www.youtube.com/channel/UCQvO0qbIa11xqwgjWJBlWlQ";
     const dribbbleUrl = "https://dribbble.com/mesmerdesign";
 
-
+const CategoryList = () => {
+    if (window.location.href == "https://blog.mesmerdesign.ca/" || window.location.href == "https://blog.mesmerdesign.ca" ||
+    window.location.href == "blog.mesmerdesign.ca/" || window.location.href == "blog.mesmerdesign.ca"){
+        return <Categories />
+    } else {
+        return null;
+    }
+}
 
     return (
         <>
@@ -83,7 +90,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     </header>
 
                     <main className="site-main">
-                        <Categories />
+                    <CategoryList/>
                         <h2 className="recent-posts-title">Recent Posts</h2>
                         {/* All the main content gets inserted here, index.js, post.js */}
                         {children}
