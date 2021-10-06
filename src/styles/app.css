@@ -482,8 +482,8 @@ h2 {
 
 .recent-posts-title {
     text-align: center;
-    font-size: 4rem;
-    margin: 1.5rem auto 1rem auto;
+    font-size: 3.5rem;
+    margin: 1.5rem auto 3rem auto;
 }
 
 @media (max-width: 500px) {
