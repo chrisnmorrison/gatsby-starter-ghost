@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
@@ -28,8 +29,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const dribbbleUrl = "https://dribbble.com/mesmerdesign";
 
 const CategoryList = () => {
-    if (window.location.href == "https://blog.mesmerdesign.ca/" || window.location.href == "https://blog.mesmerdesign.ca" ||
-    window.location.href == "blog.mesmerdesign.ca/" || window.location.href == "blog.mesmerdesign.ca"){
+    const location = useLocation();
+    if (location == "https://blog.mesmerdesign.ca/" || location == "https://blog.mesmerdesign.ca" ||
+    location == "blog.mesmerdesign.ca/" || location == "blog.mesmerdesign.ca"){
         return <Categories />
     } else {
         return null;
