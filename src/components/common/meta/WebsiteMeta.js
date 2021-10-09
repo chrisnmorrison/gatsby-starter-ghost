@@ -8,6 +8,19 @@ import url from 'url'
 import ImageMeta from './ImageMeta'
 import config from '../../../utils/siteConfig'
 
+const injectGA = () => {
+    if (typeof window == 'undefined') {
+        return;
+    }
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        window.dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3P41JGRRHM');
+};
+
 const WebsiteMeta = ({ data, settings, canonical, title, description, image, type }) => {
     settings = settings.allGhostSettings.edges[0].node
 
@@ -64,7 +77,11 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
-                
+                <script
+                    async
+                    src="https://www.googletagmanager.com/gtag/js?id=G-3P41JGRRHM"
+                />
+                <script>{injectGA()}</script>
             </Helmet>
             <ImageMeta image={shareImage} />
         </>
