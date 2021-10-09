@@ -64,8 +64,7 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
-
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P41JGRRHM"></script>
+                {{ghost_head}}            
             </Helmet>
             <ImageMeta image={shareImage} />
         </>
