@@ -42,6 +42,21 @@ module.exports = {
          *  Content Plugins
          */
          {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              // The property ID; the tracking code won't be generated without it
+              trackingId: "G-3P41JGRRHM",
+              // Defines where to place the tracking script - `true` in the head and `false` in the body
+              head: true,
+              // Delays sending pageview hits on route update (in milliseconds)
+              pageTransitionDelay: 0,
+              // Defers execution of google analytics script after page load
+              defer: false,
+              // defaults to false
+              enableWebVitalsTracking: true,
+            },
+          },
+         {
             resolve: `gatsby-source-filesystem`,
             options: {
                 path: path.join(__dirname, `src`, `pages`),

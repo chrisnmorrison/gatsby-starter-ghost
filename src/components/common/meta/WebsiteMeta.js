@@ -82,6 +82,7 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                     src="https://www.googletagmanager.com/gtag/js?id=G-3P41JGRRHM"
                 />
                 <script>{injectGA()}</script>
+                
             </Helmet>
             <ImageMeta image={shareImage} />
         </>
